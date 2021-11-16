@@ -18,5 +18,5 @@ Para exucatar o projeto:
 
 # ✉ Entre em contato:
 
-Email:Danifreiman44@gmail.com
-Linkedin:https://www.linkedin.com/in/daniel-freiman-356015177
+Email: Danifreiman44@gmail.com
+Linkedin: https://www.linkedin.com/in/daniel-freiman-356015177
