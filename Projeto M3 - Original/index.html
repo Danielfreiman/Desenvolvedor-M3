@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="PT-br">
+<head> 
+	<title>M3 Performance Digital</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/reset.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	​<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class=""> 
+			<div class="cabecalho">
+				<img class="logo" src="IMG/logo-m3.png">
+				<div id="carrinho"><img class="bag" src="IMG/bag.png"></div>
+				
+			</div>
+	</header>
+	
+	<main>
+		<div class="titulo">
+			<h1 class="titulo__principal">Blusas</h1>
+		
+			<div class="menu__navegacao">
+				<nav class="menu">
+					<ul>
+						<li class="ordenar"> Ordenar por
+							
+							<ul  class="menu__ordenar"	>
+								<br>
+								<li>Mais recentes</li>
+								<br>
+								<br>
+								<li>Menor Preço</li>
+								<br>
+								<br>
+								<li>Maior Preço</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<nav class="filtro__mobile">
+						<ul>
+							<li class="filtro__mobile___cores">filtrar
+								<ul>
+									<li>Amarelo</li>
+									<li>Azul</li>
+									<li>Branco</li>
+									<li>Cinza</li>
+									<li>Laranja</li>
+									<li>Preto</li>
+									<li>Rosa</li>
+								</ul>
+							</li>
+
+						</ul>
+				</nav>	
+					
+			</div>	
+		</div>
+		<section class="corpo">
+			<main class="filtro">		
+				<div class="filtro__geral">
+						<fieldset class="filtro__cores">
+								<legend>CORES</legend>
+								<br>
+									<label for="checkbox-amarelo"><input class="botao__cores" type="checkbox" id="checkbox-amarelo" name="checkbox-amarelo" value="amarelo">Amarelo</label>
+									<label for="checkbox-azul"><input type="checkbox" id="checkbox-azul" name="checkbox-azul" value="azul">Azul</label>
+									<label for="checkbox-branco"><input type="checkbox" id="checkbox-branco" name="checkbox-branco" value="branco">Branco</label>
+									<label for="checkbox-cinza"><input type="checkbox" id="checkbox-cinza" name="checkbox-cinza" value="cinza">Cinza</label>		
+									<label for="checkbox-laranja"><input type="checkbox" id="checkbox-laranja" name="checkbox-laranja" value="laranja">Laranja</label>
+									<span id="pontos"></span>
+										
+									<span id="mais">
+									<label for="checkbox-preto"><input class="botao__cores" type="checkbox" id="checkbox-preto" name="checkbox-preto" value="preto">Preto</label>
+									<br>
+									<label for="checkbox-rosa"><input type="checkbox" id="checkbox-rosa" name="checkbox-rosa" value="rosa">Rosa</label>
+									</span>
+									<button onclick="maisCores()" id="btMaisCores">Ver todas as cores</button>
+
+						</fieldset>	
+								<br>
+								<br>
+						<fieldset class="filtro__tamanhos">
+								<legend class="titulo__tamanho">TAMANHOS</legend>
+								<div class="filtro__tamanhos___grid">
+									<label for="botao-p"><input class="botao__tamanho" type="button" name="P" value="P" id="botao-p"></label>
+									<label for="botao-m"><input class="botao__tamanho" type="button" name="M"value="M" id="botao-m"></label>
+									<label for="botao-g"><input class="botao__tamanho"  type="button" name="G"value="G" id="botao-g"></label>
+									<label for="botao-gg"><input class="botao__tamanho"  type="button" name="GG"value="GG" id="botao-gg"></label>
+									<label for="botao-u"><input class="botao__tamanho"  type="button" name="U"value="U" id="botao-u"></label>					
+									<label for="botao-36"><input class="botao__tamanho"  type="button" name="36" value="36" id="botao-36"></label>
+									<label for="botao-38"><input class="botao__tamanho" type="button" name="38"value="38" id="botao-38"></label>
+									<label for="botao-40"><input class="botao__tamanho" type="button" name="40"value="40" id="botao-40"></label>
+									<label for="botao-42"><input class="botao__tamanho" type="button" name="42"value="42" id="botao-42"></label>
+									<label for="botao-44"><input class="botao__tamanho" type="button" name="44"value="44" id="botao-44"></label>
+									<label for="botao-46"><input class="botao__tamanho" type="button" name="46"value="46" id="botao-46"></label>
+								</div>
+
+							</fieldset>
+							<br>
+							<br>	
+							<fieldset class="filtro__faixa-de-preco">
+									<legend>FAIXA DE PREÇOS</legend>
+									<br>
+									<label for="faixa-preco1"><input class="descricao__faixa-de-preco" type="checkbox" name="faixa-preco1" value="faixa-preco1" id="faixa-preco1">de R$0 até R$50</label>
+									<label for="faixa-preco2"><input class="descricao__faixa-de-preco" type="checkbox" name="faixa-preco2"value="faixa-preco2" id="faixa-preco2">de R$51 até R$150</label>
+									<label for="faixa-preco3"><input class="descricao__faixa-de-preco" type="checkbox" name="faixa-preco3"value="faixa-preco3" id="faixa-preco3">de R$151 até R$300</label>
+									<label for="faixa-preco4"><input class="descricao__faixa-de-preco" type="checkbox" name="faixa-preco4"value="faixa-preco4" id="faixa-preco4">de R$301 até R$500</label>
+									<label for="faixa-preco5"><input class="descricao__faixa-de-preco" type="checkbox" name="faixa-preco5"value="faixa-preco5" id="faixa-preco5">a partir de R$ 01</label>
+									<button id="limpaFiltro">limpar filtros</button>
+							</fielset>
+					</div>
+				</main>
+			<div id="produtos">
+					
+			</div>
+		</section>
+			<div class="botao__final">
+				<button class="botao__carrega">CARREGAR MAIS </button>
+			</div>
+			
+	
+	</main>
+	<footer class="rodape">
+		Agência M3 - Âgencia de Perfomance Digital
+	</footer>
+<script src="JSON/produtos.js"></script>
+<script src="JS/carrega-produtos.js"></script>
+<script src="JS/carrega-mais-produtos.js"></script>
+<script src="JS/adiciona-carrinho.js"></script>
+<script src="JS/filtra-cor.js"></script>
+<script src="JS/filtra-tamanho.js"></script>
+<script src="JS/filtra-preco.js"></script>
+<script src="JS/mais-cores.js"></script>
+
+</body>
+</html>
